@@ -9,10 +9,18 @@ import SwiftUI
 
 @main
 struct LitLogApp: App {
+    @State private var showSplash = true
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+                    if showSplash {
+                        EntrySplashView {
+                            showSplash = false
+                        }
+                    } else {
+                        ContentView()
+                    }
+                }
+                .modelContainer(for: Book.self)
+            }
         }
-        .modelContainer(for: Book.self)
-    }
-}

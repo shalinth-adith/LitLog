@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F05D40C62E4B3F5A00D710E4 /* Entryview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05D40C52E4B3F5A00D710E4 /* Entryview.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F01B912A2E33946D00332AD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		F01B911C2E33946B00332AD4 /* LitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01B91292E33946D00332AD4 /* LitLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LitLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01B91332E33946D00332AD4 /* LitLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LitLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05D40C52E4B3F5A00D710E4 /* Entryview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entryview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		F01B91132E33946B00332AD4 = {
 			isa = PBXGroup;
 			children = (
+				F05D40C52E4B3F5A00D710E4 /* Entryview.swift */,
 				F01B911E2E33946B00332AD4 /* LitLog */,
 				F01B912C2E33946D00332AD4 /* LitLogTests */,
 				F01B91362E33946D00332AD4 /* LitLogUITests */,
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05D40C62E4B3F5A00D710E4 /* Entryview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

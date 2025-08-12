@@ -15,7 +15,8 @@ struct ContentView: View {
             [SortDescriptor(\Book.title),
              SortDescriptor(\Book.author)
         ]) var books: [Book]
-    
+    @State private var showEntry = true
+
     @State private var showingAddBookSheet = false
     
     var body: some View {
@@ -47,19 +48,21 @@ struct ContentView: View {
                 DetailView(book : book)
                 
             }
+            .toolbar(.visible, for: .navigationBar)   // no closure
             .toolbar{
-                ToolbarItem(placement:.topBarLeading){
-                    EditButton()
-                }
-                ToolbarItem(placement: .topBarTrailing){
-                    Button("Add Book" , systemImage: "plus"){
-                        showingAddBookSheet.toggle()
+                        ToolbarItem(placement:.topBarLeading){
+                            EditButton()
+                        }
+                        ToolbarItem(placement: .topBarTrailing){
+                            Button("Add Book" , systemImage: "plus"){
+                                showingAddBookSheet.toggle()
+                            }
+                        }
                     }
-                }
-            }
             .sheet(isPresented: $showingAddBookSheet){
                 AddBookView()
             }
+           
             
         }
     }
